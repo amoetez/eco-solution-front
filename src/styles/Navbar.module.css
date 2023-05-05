@@ -1,0 +1,194 @@
+
+  .nav__menuBar{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    cursor: pointer;
+    padding: 24px 16px;
+    z-index: 999;
+  }
+  .nav__menuBar div{
+    width: 50px;
+    height: 3px;
+ 
+    background-color: #09A79D;
+    border-radius: 2px;
+  }
+  .nav__menuList{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    width: 300px;
+    row-gap: 30px;
+    right: -288px;
+    padding: 30px 30px;
+    transition: all 0.2s;
+    min-height: calc(100vh - 60px);
+    color: #09A79D;
+  background-color: white;
+  z-index: 999;
+  }
+  
+  .active{
+    right: 0 !important;
+   
+  }
+  .nav__link{
+    font-size: 18px; 
+    position: relative;
+    transition: all 0.2s;
+
+   
+  }
+  
+  .nav__item{
+    color: #09A79D;
+    font-weight: bold;
+   
+      display: inline-block;
+      vertical-align: top;
+      padding-bottom: 5px;
+  
+  }
+  .nav__item:hover{
+    color: #09A79D;
+
+  }
+  .nav__item::before{
+    color: #09A79D;
+    content: '';
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 2px;
+     background-color: #faae12; border-radius: 40px;
+     scale: 0 1;
+     transform-origin: right;
+     transition: scale 0.7s;
+  }
+  .nav__item:hover::before{
+    scale: 1;
+    transform-origin: left;     
+  }
+  .logo{
+    margin-left: 20px;
+  }
+  
+  .center{
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbarButton{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom,  #FAAE12,#df9b3b);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-width: 0px 0px 0px 0px;
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    position:fixed;
+  }
+  
+  @media screen and (min-width: 1312px) {
+    .nav__menuBar{
+      display: none;
+
+    }
+    .nav__menuList{
+      position: unset;
+      flex-direction: row;
+      min-height: fit-content;
+        width: 85%;   
+       column-gap: 60px;
+
+    }
+   
+    .nav__item{
+      color: #09A79D;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10px ;
+      margin-left: 10px;
+
+
+    }
+    .nav__item:hover{
+      color: #09A79D;
+
+    }
+    .nav__item{
+      display: inline-block;
+      vertical-align: top;
+      padding-bottom: 5px;
+    }
+    .nav__item::before{
+      color: #09A79D;
+      content: '';
+       position: absolute;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       height: 3px;
+       background-color: #faae12; border-radius: 40px;
+       scale: 0 1;
+       transform-origin: right;
+       transition: scale 0.7s;
+    }
+    .nav__item:hover::before{
+      scale: 1;
+      transform-origin: left;     
+    }
+    .logo{
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* max-height: 100px;
+      width: 100px;
+      margin:10px; */
+
+  
+    }
+   
+    
+    .navbarButton{
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 10px;
+      background: linear-gradient(to bottom,  #FAAE12,#df9b3b);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-width: 0px 0px 0px 0px;
+     position: unset;
+      display: inline-block;
+      flex-direction: row;
+      justify-content: flex-end ;
+      align-content: flex-end;
+    }
+    
+    
+      .navbarButton:focus{
+        outline: none;
+      }
+      .navbarButton:hover{
+        transform: scale(1.1);
+        background-color: #ffffff;
+        border: 1px solid #faae12;
+      
+        box-shadow: 1px 1px 1px 1px #adabab;
+      }
+    }

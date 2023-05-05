@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+   
+}
+.cardBlog {
+    overflow: scroll;
+    max-height: fit-content;
+    height: 400px;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow:2px 2px 15px 5px rgba(0, 0, 0, 0.253);
+    background-color: rgba(255, 255, 255, 0.655);
+  
+  }
+  .cardBlog::-webkit-scrollbar {
+    display: none;
+  }
+  .cardBlog:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.253);
+  }
+  .cards_img{
+    border-radius: 5px;
+    width: 250px;
+    height: 200px;
+  }
+  .card_title{
+    overflow: scroll;
+    width: 250px;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 10px;
+    word-wrap: break-word;
+  }
+  .card_text {
+   font-size: .9rem;
+    padding:5px ;
+    width: 250px;
+  }
+
+  .cardBlog:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.253);
+  
+  }

@@ -1,0 +1,49 @@
+.stepper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.step {
+    display: flex;
+    width: 20%;
+    padding: 10px 2px;
+    text-align: center;
+    font-weight: normal;
+}
+.step_content{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.step_text{
+    text-align: left;
+    clear: both;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: auto 5px;  
+}
+.step_title{
+    margin: auto 5px;
+    color: #575757;
+}
+.step_count {
+    color: #b8b8b8;
+    font-size: 0.8rem;
+    margin: auto 5px;
+}
+.icon{
+    color :#b8b8b8;
+    height: 20px;
+    margin: auto 5px;
+}
+.h_line {
+    border-bottom: 2px solid #b8b8b8;
+    width: 100%;
+    margin: auto;
+}
+
+.active {
+   
+}
