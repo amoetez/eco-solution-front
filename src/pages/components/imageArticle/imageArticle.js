@@ -1,4 +1,4 @@
-import styles from "../../../styles/secondPage.module.scss";
+
 
 
 
