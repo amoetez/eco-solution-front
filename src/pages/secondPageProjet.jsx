@@ -12,7 +12,7 @@ import YouTube, { YouTubeProps } from "react-youtube";
 const imgg1 = new URL("../../public/assets/IMG_blog1.jpg", import.meta.url);
 export default function SecondPageProjet({ data }) {
   const router = useRouter();
-  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://localhost:5050";
+  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://79.137.87.204:5050";
   const [projet, setprojet] = useState([]);
   const Gallery = ({ imagePaths }) => {
     if (!Array.isArray(imagePaths)) {
@@ -23,7 +23,7 @@ export default function SecondPageProjet({ data }) {
         {imagePaths.map((path) => (
           <img
             key={path}
-            src={`http://localhost:5050/imagesProjet/${path}`}
+            src={`http://79.137.87.204:5050/imagesProjet/${path}`}
             alt={path}
           />
         ))}
@@ -130,7 +130,7 @@ import ImageArticle from "./components/imageArticle/imageArticle";
 const imgg1 = new URL("../../public/assets/IMG_blog1.jpg", import.meta.url);
 export default function SecondPageArticle({data}) {
     const router = useRouter();
-    const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = 'http://localhost:5050'
+    const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = 'http://79.137.87.204:5050'
     const [article, setArticle] = useState([]);
 
     useEffect(() => {

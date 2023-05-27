@@ -34,7 +34,7 @@ export default function Etape5() {
     const [formSubmitted, setFormSubmitted] = useState(false);
 
     console.log(router.query);
-    const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://localhost:5050";
+    const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://79.137.87.204:5050";
     const [puissance, setPuissance] = useState([]);
 
     useEffect(() => {

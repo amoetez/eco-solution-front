@@ -14,7 +14,7 @@ const img4 = new URL(
 
 export default function Progress() {
   const size = UseGetWindowSize();
-  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://localhost:5050";
+  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://79.137.87.204:5050";
   const [indicateur, setIndicateur] = useState([]);
 
   useEffect(() => {

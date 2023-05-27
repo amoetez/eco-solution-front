@@ -3,7 +3,7 @@ import Article from "./article"
 
 export default function Articles() {
     const [articles,setArticles] = useState([]);
-    const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = 'http://localhost:5050'
+    const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = 'http://79.137.87.204:5050'
     
     useEffect(() => {
         fetch(`${PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL}/articles`)

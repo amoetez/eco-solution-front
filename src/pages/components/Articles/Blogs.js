@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 export default function Blogs() {
   const [articleCardsContent, setArticleCardsContent] = useState([]);
-  const PROTOCOLANDHOSTNAMEPARTOFTHEURL = "http://localhost:5050/";
-  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://localhost:5050";
+  const PROTOCOLANDHOSTNAMEPARTOFTHEURL = "http://79.137.87.204:5050/";
+  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://79.137.87.204:5050";
   useEffect(() => {
     fetch(`${PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL}/articles`)
       .then((response) => response.json())
@@ -21,7 +21,7 @@ export default function Blogs() {
       .then((response) => response.json())
       .then((data) => {
         setArticleCardsContent(data);
-        console.log(articleCardsContent);
+        console.log(data);
       })
       .catch((error) => console.log(error));
   }, []);

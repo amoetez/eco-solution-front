@@ -4,7 +4,7 @@ import styles from "../../styles/Navbar.module.css";
 const logg = new URL("./Navbar/logo.png", import.meta.url);
 import { useState, useEffect, useRef } from "react";
 export default function Footer() {
-  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://localhost:5050";
+  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://79.137.87.204:5050";
   const [contact, setContact] = useState([]);
 
   useEffect(() => {

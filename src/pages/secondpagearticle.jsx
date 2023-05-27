@@ -21,7 +21,7 @@ const Gallery = ({ imagePaths }) => {
       {imagePaths.map((path) => (
         <img
           key={path}
-          src={`http://localhost:5050/imagesArticle/${path}`}
+          src={`http://79.137.87.204:5050/imagesArticle/${path}`}
           alt={path}
         />
       ))}
@@ -31,7 +31,7 @@ const Gallery = ({ imagePaths }) => {
 
 export default function SecondPageArticle({ data }) {
   const router = useRouter();
-  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://localhost:5050";
+  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://79.137.87.204:5050";
   const [article, setArticle] = useState([]);
 
   useEffect(() => {

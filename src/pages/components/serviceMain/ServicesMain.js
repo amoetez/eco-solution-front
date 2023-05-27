@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import ServiceMain from "./ServiceMain";
 export default function ServicesMain() {
   const [services, setServices] = useState([]);
-  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://localhost:5050";
+  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://79.137.87.204:5050";
 
   useEffect(() => {
     fetch(`${PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL}/services`)

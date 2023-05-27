@@ -4,7 +4,7 @@
         return (
           <div className="gallery">
             {imagePaths.map(path => (
-              <img key={path} src={`http://localhost:5050/imagesArticle/${path}`} alt={path} />
+              <img key={path} src={`http://79.137.87.204:5050/imagesArticle/${path}`} alt={path} />
             ))}
           </div>
         );

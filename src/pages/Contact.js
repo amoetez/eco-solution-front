@@ -6,7 +6,7 @@ import {FaFacebook, FaInstagram , FaLinkedin} from 'react-icons/fa';
 import Titres from "./components/titres/titres";
 import { useState, useEffect, useRef } from "react";
 export default function Contact() {
-  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://localhost:5050";
+  const PROTOCOL_AND_HOST_NAME_PART_OF_THE_URL = "http://79.137.87.204:5050";
   const [contact, setContact] = useState([]);
 
   useEffect(() => {
